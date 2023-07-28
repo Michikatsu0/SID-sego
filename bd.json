@@ -1,0 +1,23 @@
+{
+    "user": [
+        {
+            "id":1,
+            "username":"sego",
+            "state":true
+        },
+        {
+            "id":2,
+            "username":"manolo",
+            "state":true
+        },
+        {
+            "id":3,
+            "username":"cheira",
+            "state":true
+        }
+    ],
+    "worlds":[]
+}
+
+
+
