@@ -1,24 +1,26 @@
 {
-    "user": [
-        {
-            "id":1,
-            "username":"sego",
-            "state":true,
-            "deck":[1,2,3,4,5]
-        },
-        {
-            "id":2,
-            "username":"manolo",
-            "state":true,
-            "deck":[50,20,31,46,58]
-        },
-        {
-            "id":3,
-            "username":"cheira",
-            "state":true,
-            "deck":[50,20,31,46,58]
-        }
-    ],
+    "users": {
+        "users": [
+            {
+                "id":1,
+                "username":"sego",
+                "state":true,
+                "deck":[1,2,3,4,5]
+            },
+            {
+                "id":2,
+                "username":"manolo",
+                "state":true,
+                "deck":[50,20,31,46,58]
+            },
+            {
+                "id":3,
+                "username":"cheira",
+                "state":true,
+                "deck":[50,20,31,46,58]
+            }
+        ]
+    },
     "worlds":[1,2,3,4,5,6,7,8]
 }
 
