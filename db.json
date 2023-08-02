@@ -3,17 +3,20 @@
         {
             "id":1,
             "username":"sego",
-            "state":true
+            "state":true,
+            "deck":[1,2,3,4,5]
         },
         {
             "id":2,
             "username":"manolo",
-            "state":true
+            "state":true,
+            "deck":[50,2,3,4,58]
         },
         {
             "id":3,
             "username":"cheira",
-            "state":true
+            "state":true,
+            "deck":[1,2,3,4,5,]
         }
     ],
     "worlds":[1,2,3,4,5,6,7,8]
