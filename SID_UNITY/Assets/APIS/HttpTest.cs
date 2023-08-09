@@ -4,17 +4,21 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor.PackageManager.Requests;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class HttpTest : MonoBehaviour
 {
-    public int userId = 2;
+    public TMP_InputField TMP_UserId;
+    private int userId = 0;
     public string url = "https://my-json-server.typicode.com/Michikatsu0/SID-Sego";
     public string apiRickAndMorty = "https://rickandmortyapi.com/api/character";
     [SerializeField] private TMP_Text usernameLabel;
     [SerializeField] private RawImage[] myDeck;
     [SerializeField] private TMP_Text[] myDeckLabel;
+    [SerializeField] private TMP_Text[] myDeckLabel2;
+    [SerializeField] private TMP_Text[] myDeckLabel3;
     private User myUser;
 
     // Start is called before the first frame update
@@ -22,9 +26,11 @@ public class HttpTest : MonoBehaviour
     {
         
     }
-
     public void SendRequest()
     {
+        if (int.TryParse(TMP_UserId.text,out int result))
+            userId = result;
+        
         StartCoroutine(GetUsers());
     }
 
@@ -76,6 +82,8 @@ public class HttpTest : MonoBehaviour
                 Character character = JsonUtility.FromJson<Character>(request.downloadHandler.text);
                 StartCoroutine(DownloadImage(character.image, myDeck[index]));
                 myDeckLabel[index].text = character.name;
+                myDeckLabel2[index].text = character.species;
+                myDeckLabel3[index].text = character.gender;
             }
             else
             {
@@ -120,4 +128,6 @@ public class Character
     public int id;
     public string name;
     public string image;
+    public string species;
+    public string gender;
 }
