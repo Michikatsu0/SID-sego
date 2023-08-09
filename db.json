@@ -1,11 +1,11 @@
 {
     "users": {
-        "users": [
+        "users":[
             {
                 "id":1,
                 "username":"sego",
                 "state":true,
-                "deck":[1,2,3,4,5]
+                "deck": [1,2,3,4,5]
             },
             {
                 "id":2,
@@ -17,7 +17,7 @@
                 "id":3,
                 "username":"cheira",
                 "state":true,
-                "deck":[50,20,31,46,58]
+                "deck":[54,14,7,9,43]
             }
         ]
     },
