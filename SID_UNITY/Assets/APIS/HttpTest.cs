@@ -11,21 +11,18 @@ using UnityEngine.UI;
 public class HttpTest : MonoBehaviour
 {
     public TMP_InputField TMP_UserId;
-    private int userId = 0;
     public string url = "https://my-json-server.typicode.com/Michikatsu0/SID-Sego";
     public string apiRickAndMorty = "https://rickandmortyapi.com/api/character";
+    
     [SerializeField] private TMP_Text usernameLabel;
     [SerializeField] private RawImage[] myDeck;
     [SerializeField] private TMP_Text[] myDeckLabel;
     [SerializeField] private TMP_Text[] myDeckLabel2;
     [SerializeField] private TMP_Text[] myDeckLabel3;
-    private User myUser;
+    
+    private UserRYM myUser;
+    private int userId = 0;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
     public void SendRequest()
     {
         if (int.TryParse(TMP_UserId.text,out int result))
@@ -48,7 +45,7 @@ public class HttpTest : MonoBehaviour
 
             if (request.responseCode == 200)
             {
-                myUser = JsonUtility.FromJson<User>(request.downloadHandler.text);
+                myUser = JsonUtility.FromJson<UserRYM>(request.downloadHandler.text);
 
                 usernameLabel.text = myUser.username;
 
@@ -111,11 +108,11 @@ public class HttpTest : MonoBehaviour
 [System.Serializable]
 public class UsersList
 {
-    public List<User> users;
+    public List<UserRYM> users;
 }
 
 [System.Serializable]
-public class User
+public class UserRYM
 {
     public int id;
     public string username;
