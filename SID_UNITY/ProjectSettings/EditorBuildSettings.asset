@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/APIS/Game.unity
     guid: 9fc6b1c9ed525214c8f5ddfd2ad71cdf
+  - enabled: 1
+    path: Assets/Scenes/Firebase/GameScene.unity
+    guid: a28826d089abebd41b3b34e3a6f88bd9
+  - enabled: 1
+    path: Assets/Scenes/Firebase/HomeAuth.unity
+    guid: b64442e1388e59a4d9a1cee061e2ebdb
+  - enabled: 1
+    path: Assets/Scenes/Firebase/GameScene.unity
+    guid: 270a0623f13fea742aeda4a71a936db3
   m_configObjects: {}
