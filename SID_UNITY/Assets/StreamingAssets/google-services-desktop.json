@@ -1,37 +1,27 @@
 {
   "project_info": {
-    "project_number": "1058601137102",
-    "firebase_url": "https://sid-se-default-rtdb.firebaseio.com",
-    "project_id": "sid-se",
-    "storage_bucket": "sid-se.appspot.com"
+    "project_number": "727216975631",
+    "firebase_url": "https://sid-servidor-juego-default-rtdb.firebaseio.com",
+    "project_id": "sid-servidor-juego",
+    "storage_bucket": "sid-servidor-juego.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1058601137102:android:29a69e43955333e46bf19f",
+        "mobilesdk_app_id": "1:727216975631:android:56c3a79163f44feebbd87a",
         "android_client_info": {
-          "package_name": "com.uppercode.segocoin"
+          "package_name": "com.camilostudios.birdflappy"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "1058601137102-79n7mo2rakcav1ipv10ho6roaq25im65.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAUeipt549DyetInV5Gbu1sPi2KWQms718"
+          "current_key": "AIzaSyAvuiDGzhvBUA4x1BnOFYtvssh9m5MP8zE"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1058601137102-79n7mo2rakcav1ipv10ho6roaq25im65.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
