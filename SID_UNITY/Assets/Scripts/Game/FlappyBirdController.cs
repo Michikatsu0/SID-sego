@@ -52,7 +52,7 @@ public class FlappyBirdController : MonoBehaviour {
     void MoveCameraForward()
     {
         if(!isPaused && !IsDead)
-            transform.parent.Translate(new Vector3(0.01f/2, 0));
+            transform.parent.Translate(new Vector3(0.02f, 0));
     }
 
     IEnumerator AutoFlap()

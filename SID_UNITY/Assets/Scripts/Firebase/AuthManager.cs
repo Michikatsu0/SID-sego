@@ -32,11 +32,6 @@ public class AuthManager : MonoBehaviour
         buttonLogin.onClick.AddListener(HandleLoginButtonClicked);
         restoreButton.onClick.AddListener(HandleRestoreButtonClicked);
         mDatabaseRef = FirebaseDatabase.DefaultInstance.RootReference;
-        FirebaseAuth.DefaultInstance.StateChanged += HandleAuthStateChange;
-    }
-
-    private void HandleAuthStateChange(object sender, EventArgs e)
-    {
         if (FirebaseAuth.DefaultInstance.CurrentUser != null)
             SceneManager.LoadScene((int)AppScene.GAME);
     }
